@@ -1,0 +1,144 @@
+body {
+    width: 1440px;
+    background-color: #E1D4C9;
+}
+header{
+    width: 100%;
+    max-width: 1440px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.navigation a {
+    position: relative;        
+    color: #333;               
+    text-decoration: none;     
+    font-size: 18px;
+    display: inline-block;     
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 50%;                
+    bottom: -5px;
+    width: 0;                
+    height: 4px;
+    background-color: #B0907A; 
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+
+.navigation a:hover::after {
+    width: 100%;               
+    left: 0;                   
+}
+.box{
+    width: 100%;
+    max-width: 1360px;
+    padding: 0px 40px 0px 40px;
+}
+#logo{
+    width: 100px;
+    height: 60px;
+}
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    max-width: 1032px;
+}
+.header-actions{
+    gap:24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 184px;
+}
+.asd {
+    display: flex;
+    justify-self: center;
+    height: 28px;
+}
+.hero-box{
+     position: relative;
+    max-width: 1360px;
+    padding: 0px 40px 0px 40px;
+    width: 100%;
+}
+.imghero{
+   
+    max-width: 1360px;
+    border-radius: 40px;
+  width: 100%;
+}
+.hero-text {
+width: 530px;
+
+height: 100%;
+ position: absolute;
+  top: 0;
+  left: 100px;
+gap: 40px;
+display: flex;
+  flex-direction: column; 
+  gap: 40px;
+  justify-content: center;
+
+}
+.enj{
+    font-family: 'Inter';
+font-style: italic;
+font-weight: 600;
+font-size: 72px;
+line-height: 105%;
+color: #B0907A;
+}
+.herotop{
+    margin: 0;
+font-family: 'Inter';
+font-weight: 600;
+font-size: 72px;
+line-height: 105%;
+color: #E1D4C9;
+align-self: stretch;
+}
+.heromidl{
+width: 530px;
+height: 72px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #E1D4C9;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+.hero-button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 78px;
+gap: 8px;
+width: 200px;
+height: 64px;
+background: #E1D4C9;
+border-radius: 100px;
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
