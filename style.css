@@ -140,5 +140,116 @@ border-radius: 100px;
 flex: none;
 order: 2;
 flex-grow: 0;
+}
+.favorite-coffe{
+    height: 799px;
+padding: 0px 40px;
+}
+.coffe-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 1360px;
+gap: 40px;
+height: 799px;
+}
+.choose{
+    margin: 0px;
+    font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 60px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: center;
 
+}
+.favor{
+font-family: Inter;
+font-weight: 600;
+font-style: Italic;
+font-size: 60px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: center;
+color: #B0907A;
+
+}
+.coffe-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 1360px;
+height: 684px;
+gap: 40px;
+angle: 0 deg;
+opacity: 1;
+
+}
+.slider{
+    width: 1360px;
+height: 640px;
+gap: 40px;
+angle: 0 deg;
+opacity: 1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.imgslide1{
+    width: 480px;
+    height: 480px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+height: 140px;
+gap: 16px;
+opacity: 1;
+
+}
+.topic{
+        margin: 0px;
+    font-family: 'Inter', sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.descrip{
+        margin: 0px;
+    font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.cost{
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+font-weight: 600;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.svgarr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.controls{
+    display: flex;
+    gap: 16px;
+    height: 4px;
+    width: 140px;
 }
