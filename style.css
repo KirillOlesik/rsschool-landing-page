@@ -1,6 +1,9 @@
 body {
     width: 1440px;
+    display: flex;
+    flex-direction: column;
     background-color: #E1D4C9;
+    gap: 100px;
 }
 header{
     width: 100%;
@@ -162,6 +165,7 @@ leading-trim: NONE;
 line-height: 125%;
 letter-spacing: 0%;
 text-align: center;
+color: #403F3D;
 
 }
 .favor{
@@ -252,4 +256,138 @@ text-align: center;
     gap: 16px;
     height: 4px;
     width: 140px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 1440px;
+height: 1325px;
+gap: 40px;
+opacity: 1;
+
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+height: 1325px;
+max-width: 1360px;
+gap: 40px;
+
+opacity: 1;
+
+
+}
+.about-text {
+    color: #403F3D;
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 59px;
+    line-height: 125%;
+    max-height: 225px;
+
+    
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.imgCoffeWomen{
+    width: 660px;
+height: 590px;
+opacity: 1;
+border-radius: 20px;
+
+}
+.imgCoffe{
+  object-fit: cover;
+    width: 660px;
+height: 430px;
+opacity: 1;
+border-radius: 20px;
+
+}
+.images{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+height: 1060px;
+max-width: 1360px;
+gap: 40px;
+opacity: 1;
+
+}
+.mobileApp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+width: 100%;
+    max-width: 1440px;
+height: 630px;
+gap: 100px;
+opacity: 1;
+border-radius: 40px;
+
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 40px;
+    width: 630px;
+height: 342px;
+gap: 40px;
+opacity: 1;
+
+}
+.mobileAppBox{
+    display:flex ;
+    flex-direction: row;
+    max-width: 1360px;
+    width: 100%;
+height: 630px;
+gap: 100px;
+
+opacity: 1;
+
+}
+.offerDescrip{
+    margin: 0px;
+    font-family: Inter,sans-serif;
+font-weight: 400;
+font-style:normal;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #403F3D;
+}
+.offerButton{
+    width: 200px;
+height: 64px;
+gap: 8px;
+padding: 0px;
+opacity: 1;
+border-radius: 100px;
+border-width: 1px;
+background-color: #E1D4C9;
+}
+.offerimg{
+    width: 630px;
+    height: 630px;
+}
+.buttons{
+    width: 420px;
+height: 64px;
+gap: 20px;
+opacity: 1;
+
+    display: flex;
+
 }
