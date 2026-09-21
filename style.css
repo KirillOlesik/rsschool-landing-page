@@ -1,12 +1,17 @@
 p {
   margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 1440px;
+    
     display: flex;
     flex-direction: column;
     background-color: #E1D4C9;
     gap: 100px;
+     margin: 0 auto;
 }
 header{
     width: 100%;
@@ -135,20 +140,46 @@ order: 1;
 align-self: stretch;
 flex-grow: 0;
 }
-.hero-button{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 20px 78px;
-gap: 8px;
-width: 200px;
-height: 64px;
-background: #E1D4C9;
-border-radius: 100px;
-flex: none;
-order: 2;
-flex-grow: 0;
+.hero-button {
+     overflow: hidden; 
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; 
+    gap: 8px;
+    width: 200px;
+    height: 64px;
+    box-sizing: border-box; 
+    font-weight: 600;
+    font-size: 17px;
+    background: #E1D4C9;
+    border-radius: 100px;
+    color: #403F3D;
+    text-decoration: none;
+    border: none; 
+    cursor: pointer;
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.hero-button .btn-text {
+    transition: transform 0.8s ease;
+}
+.hero-button .btn-icon {
+    opacity: 0;
+    margin-left: -20px; 
+    transform: translateX(15px); 
+    transition: opacity 0.8s ease, margin-left 0.8s ease, transform 0.8s ease;
+}
+.hero-button:hover .btn-text {
+    transform: translateX(+10px); 
+}
+.hero-button:hover .btn-icon {
+    opacity: 1;
+    margin-left: 8px;
+    transform: translateX(0);
 }
 .favorite-coffe{
     height: 799px;
@@ -165,9 +196,8 @@ height: 799px;
     margin: 0px;
     font-family: Inter;
 font-weight: 600;
-font-style: Semi Bold;
+font-style: normal;
 font-size: 60px;
-leading-trim: NONE;
 line-height: 125%;
 letter-spacing: 0%;
 text-align: center;
@@ -179,7 +209,6 @@ font-family: Inter;
 font-weight: 600;
 font-style: Italic;
 font-size: 60px;
-leading-trim: NONE;
 line-height: 125%;
 letter-spacing: 0%;
 text-align: center;
@@ -193,7 +222,6 @@ color: #B0907A;
 width: 1360px;
 height: 684px;
 gap: 40px;
-angle: 0 deg;
 opacity: 1;
 
 }
@@ -201,7 +229,6 @@ opacity: 1;
     width: 1360px;
 height: 640px;
 gap: 40px;
-angle: 0 deg;
 opacity: 1;
 display: flex;
 justify-content: space-between;
@@ -245,7 +272,6 @@ text-align: center;
     font-family: 'Inter', sans-serif;
 font-weight: 600;
 font-size: 24px;
-leading-trim: NONE;
 line-height: 125%;
 letter-spacing: 0%;
 text-align: center;
@@ -300,12 +326,16 @@ opacity: 1;
 }
 
 .column{
+  
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
 }
 .imgCoffeWomen{
+    
+transition: transform 0.6s ease;
     width: 660px;
 height: 590px;
 opacity: 1;
@@ -313,6 +343,8 @@ border-radius: 20px;
 
 }
 .imgCoffe{
+    
+transition: transform 0.6s ease;
   object-fit: cover;
     width: 660px;
 height: 430px;
@@ -320,7 +352,12 @@ opacity: 1;
 border-radius: 20px;
 
 }
+.imgCoffe:hover {
+    transform: scale(0.98);
+}
+
 .images{
+    
     display:flex;
     flex-direction: row;
     width:100%;
@@ -330,6 +367,10 @@ gap: 40px;
 opacity: 1;
 
 }
+.imgCoffeWomen:hover {
+    transform: scale(0.98); 
+}
+
 .mobileApp{
     display: flex;
     flex-direction: row;
@@ -383,7 +424,29 @@ opacity: 1;
 border-radius: 100px;
 border-width: 1px;
 background-color: #E1D4C9;
+transition:  0.8s ease
 }
+.offerButton:hover{
+    background-color: #665F55;
+}
+.offerButton svg rect {
+    stroke: #665F55; 
+    transition: stroke 0.5s ease; 
+}
+.offerButton svg path {
+    fill: #665F55;
+    transition: fill 0.5s ease; 
+}
+
+
+.offerButton:hover svg rect {
+    stroke: #E1D4C9; 
+}
+
+.offerButton:hover svg path {
+    fill: #E1D4C9;
+}
+
 .offerimg{
     width: 630px;
     height: 630px;
@@ -414,7 +477,7 @@ color:#E1D4C9;
     display: flex;
     flex-direction: row;
     width: 100%;
-height: 450;
+height: 250px;
 max-width: 1160px;
 gap: 100px;
 opacity: 1;
@@ -432,18 +495,40 @@ opacity: 1;
 
 }
 .contacts{
+    width: 1440px;
+height: 450px;
+opacity: 1;
+
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
-.twiterBtn{
+.twiterBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     width: 60px;
-height: 60px;
-opacity: 1;
-border-radius: 100px;
-border-width: 1px;
-background-color: #665F55;
-
+    height: 60px;
+    opacity: 1;
+    border-radius: 100px;
+    border: 1px solid #E1D4C9; 
+    background-color: #665F55;
+    transition: background-color 0.5s ease, border-color 0.5s ease; 
 }
+.twiterBtn:hover {
+    background-color: #E1D4C9;
+    border-color: #665F55;
+}
+
+.twt path {
+    stroke: #E1D4C9; 
+    transition: stroke 0.5s ease;
+}
+.twiterBtn:hover .twt path {
+    stroke: #665F55;
+}
+
 .social{
     display: flex;
     width: 204px;
@@ -456,7 +541,7 @@ opacity: 1;
 .contactsInfo{
     display: flex;
     flex-direction: column;
-    justify-content:center; 
+    align-self: center;
     width: 530px;
 height: 186px;
 gap: 40px;
@@ -473,21 +558,45 @@ line-height: 125%;
 letter-spacing: 0%;
 color: #E1D4C9;
 }
-.conInf{
+
+.con {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    gap: 16px;
+    opacity: 1;
+}
+
+.conInf {
     font-family: Inter,sans-serif;
 font-weight: 600;
 font-style: normal;
 font-size: 16px;
 line-height: 150%;
-letter-spacing: 0%;
-color: #E1D4C9;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+    text-decoration: none;
+    color: #E1D4C9; 
+    position: relative; 
+    width: fit-content; 
 }
-.con{
-    display: flex;
-    flex-direction: column;
-    width: 195px;
-height: 116px;
-gap: 16px;
-opacity: 1;
 
+.con a.conInf::after {
+    content: '';
+    position: absolute;
+    left: 50%;                
+    bottom: -4px;
+    width: 0;                
+    height: 2px; 
+    background-color: #B0907A; 
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.con a.conInf:hover::after {
+    width: 100%;               
+    left: 0;                   
+}
+.non-clickable {
+    cursor: default;
 }
