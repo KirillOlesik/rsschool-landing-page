@@ -4,7 +4,7 @@ p {
 html {
     scroll-behavior: smooth;
 }
-body {
+.body {
     width: 1440px;
     
     display: flex;
@@ -267,6 +267,15 @@ letter-spacing: 0%;
 text-align: center;
 
 }
+.descripCard{
+        margin: 0px;
+    font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+
+}
 .cost{
     margin: 0px;
     font-family: 'Inter', sans-serif;
@@ -275,6 +284,18 @@ font-size: 24px;
 line-height: 125%;
 letter-spacing: 0%;
 text-align: center;
+color: #403F3D;
+
+}
+.costCard{
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 125%;
+letter-spacing: 0%;
+color: #403F3D;
+
 
 }
 .svgarr{
@@ -495,7 +516,8 @@ opacity: 1;
 
 }
 .contacts{
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
 height: 450px;
 opacity: 1;
 
@@ -652,4 +674,190 @@ line-height: 150%;
 .dark-theme li,
 .dark-theme a {
   color: #E1D4C9 !important;
+}
+.menu{
+    width: 100%;
+    max-width: 1360px;
+
+gap: 40px;
+opacity: 1;
+padding-right: 40px;
+padding-left: 40px;
+padding-top: 20px;
+
+}
+.bodyMenu {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E1D4C9;
+     margin: 0 auto;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.menuBox{
+    display: flex;
+    flex-direction: column;
+    max-width: 1360px;
+
+width: 100%;
+gap: 40px;
+opacity: 1;
+
+}
+.offerMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1360px;
+    width: 100%;
+
+gap: 40px;
+opacity: 1;
+
+}
+.prodMenu{
+    display: flex;
+flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+max-width: 1360px;
+gap: 40px;
+opacity: 1;
+margin: 0px auto 0;
+    box-sizing: border-box;
+
+}
+.photoCard{
+    width: 310px;
+height: 310px;
+opacity: 1;
+border-radius: 40px;
+
+}
+.card{
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 310px;
+    height: 506px;
+display: flex;
+flex-direction: column;
+border-color: #C1B6AD;
+border-radius: 40px;
+border-width: 1px;
+}
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+height: 196px;
+ box-sizing: border-box;
+opacity: 1;
+padding: 20px;
+
+}
+.tabs{
+    display:flex ;
+    flex-direction: row;
+    gap: 16px;
+    width: 361px;
+    height: 46px;
+    justify-content: center;
+}
+.tabsBtn{
+    
+     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+height: 46px;
+gap: 8px;
+opacity: 1;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 8px;
+border-radius: 100px;
+background-color: #665F55;
+
+}
+.tabsBtnTea{
+    
+     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+height: 46px;
+gap: 7px;
+opacity: 1;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 8px;
+border-radius: 100px;
+background-color: #665F55;
+
+}
+.tabsBtnDess{
+    
+     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+height: 46px;
+gap: 8px;
+opacity: 1;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 8px;
+border-radius: 100px;
+background-color: #665F55;
+
+}
+.tabsImg{
+  width: 25px;
+height: 25px;
+size: 20px;
+opacity: 1;
+}
+.tabsImgCake{
+  width: 23px;
+height: 23px;
+size: 20px;
+opacity: 1;
+
+
+}
+.tabsCircl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #E1D4C9;
+}
+.tabsTxt{
+    font-family: Inter,sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #E1D4C9;
 }
