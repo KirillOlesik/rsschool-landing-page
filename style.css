@@ -276,6 +276,16 @@ line-height: 150%;
 letter-spacing: 0%;
 
 }
+.car{
+    width: 100%;
+    max-width: 270px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+}
 .cost{
     margin: 0px;
     font-family: 'Inter', sans-serif;
@@ -733,6 +743,15 @@ margin: 0px auto 0;
     box-sizing: border-box;
 
 }
+#coffee-menu {
+display: contents
+}
+#tea-menu {
+display: contents
+}
+#dess-menu {
+display: contents
+}
 .photoCard{
     width: 310px;
 height: 310px;
@@ -756,7 +775,7 @@ border-width: 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 270px;
+    width:31ppx;
 height: 196px;
  box-sizing: border-box;
 opacity: 1;
@@ -778,55 +797,32 @@ padding: 20px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 115px;
-height: 46px;
-gap: 8px;
+
 opacity: 1;
 padding-top: 8px;
 padding-right: 16px;
 padding-bottom: 8px;
 padding-left: 8px;
 border-radius: 100px;
-background-color: #665F55;
+background-color: #E1D4C9;
+transition: background-color 0.3s ease, color 0.3s ease; 
 
 }
-.tabsBtnTea{
-    
-     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.Tea{
+    gap: 6.5px;
     width: 90px;
-height: 46px;
-gap: 7px;
-opacity: 1;
-padding-top: 8px;
-padding-right: 16px;
-padding-bottom: 8px;
-padding-left: 8px;
-border-radius: 100px;
-background-color: #665F55;
-
+    height: 46px;
 }
-.tabsBtnDess{
-    
-     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.Coffe{
+    gap: 8px;
+    width: 115px;
+    height: 46px;
+}
+
+.Dess{
+    gap: 8px;
     width: 124px;
 height: 46px;
-gap: 8px;
-opacity: 1;
-padding-top: 8px;
-padding-right: 16px;
-padding-bottom: 8px;
-padding-left: 8px;
-border-radius: 100px;
-background-color: #665F55;
-
 }
 .tabsImg{
   width: 25px;
@@ -850,7 +846,8 @@ opacity: 1;
     width: 30px;
     height: 30px;
     border-radius: 100px;
-    background-color: #E1D4C9;
+    background-color: #C1B6AD;
+    transition: background-color 0.3s ease;
 }
 .tabsTxt{
     font-family: Inter,sans-serif;
@@ -859,5 +856,48 @@ font-style: normal;
 font-size: 16px;
 line-height: 150%;
 letter-spacing: 0%;
-color: #E1D4C9;
+color: #403F3D;
+ transition: color 0.3s ease;
+}
+.hidden {
+    display: none !important;
+}
+
+.tabsBtn.active {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.tabsBtn.active .tabsTxt{
+    color: #E1D4C9;
+}
+.tabsBtn.active .tabsCircl{
+    background-color: #E1D4C9;
+}
+.tabsBtn:hover {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.tabsBtn:hover .tabsTxt{
+    color: #E1D4C9;
+}
+.tabsBtn:hover .tabsCircl{
+    background-color: #E1D4C9;
+}
+.image-container {
+  width: 310px;
+  height: 310px;
+  border-radius: 40px;
+  overflow: hidden; 
+}
+.zoom-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.075); 
+  transition: transform 0.4s ease; 
+}
+.image-container:hover .zoom-image {
+  transform: scale(1); 
 }

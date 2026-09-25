@@ -88,19 +88,19 @@
             <div class="offerMenu">
         <h1 class="choose">Behind each of our cups hides an <span class="favor">amazing surprise</span></h1>
         <div class="tabs">
-            <button type="button" class="tabsBtn">
+            <button type="button" class="tabsBtn Coffe active" data-category="coffee">
                 <span class="tabsCircl">
                     <img src="./img/tabs3.png" alt="tabsicon" class="tabsImg">
                 </span>
                 <span class="tabsTxt">Coffe</span>
             </button>
-             <button type="button" class="tabsBtnTea">
+             <button type="button" class="tabsBtn Tea" data-category="tea">
                 <span class="tabsCircl">
                     <img src="./img/tabs1.png" alt="tabsicon" class="tabsImg">
                 </span>
                 <span class="tabsTxt">Tea</span>
             </button>
-             <button type="button" class="tabsBtnDess">
+             <button type="button" class="tabsBtn Dess" data-category="dess">
                 <span class="tabsCircl">
                     <img src="./img/tabs2.png" alt="tabsicon" class="tabsImgCake">
                 </span>
@@ -110,8 +110,11 @@
         </div>
             </div>
             <div class="prodMenu">
+                <div id="coffee-menu" class="menu-category">
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe1.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe1.jpg" alt="coffe1">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Irish coffee</h2>
                         <p class="descripCard">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
@@ -119,7 +122,9 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe2.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe2.jpg" alt="coffe2">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Kahlua coffee</h2>
                         <p class="descripCard">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
@@ -127,7 +132,9 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe3.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe3.jpg" alt="coffe3">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Honey raf</h2>
                         <p class="descripCard">Espresso with frothed milk, cream and aromatic honey</p>
@@ -135,7 +142,9 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe4.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe4.jpg" alt="coffe4">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Ice cappuccino</h2>
                         <p class="descripCard">Cappuccino with soft thick foam in summer version with ice</p>
@@ -143,7 +152,9 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe5.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe5.jpg" alt="coffe5">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Espresso</h2>
                         <p class="descripCard">Classic black coffee</p>
@@ -151,7 +162,9 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe6.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe6.jpg" alt="coffe6">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Latte</h2>
                         <p class="descripCard">Espresso coffee with the addition of steamed milk and dense milk foam</p>
@@ -159,7 +172,9 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe7.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe7.jpg" alt="coffe7">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Latte macchiato</h2>
                         <p class="descripCard">Espresso with frothed milk and chocolate</p>
@@ -167,13 +182,140 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="photoCard" src="./img/coffe8.jpg" alt="coffe1">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/coffe8.jpg" alt="coffe8">
+                    </div>
                     <div class="cardDescription">
                         <h2 class="costCard">Coffee with cognac</h2>
                         <p class="descripCard">Fragrant black coffee with cognac and whipped cream</p>
                         <p class="costCard">$6.50</p>
                     </div>
                 </article>
+                </div>
+                <div id="tea-menu" class="menu-category hidden">
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/tea1.jpg" alt="tea1">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Moroccan</h2>
+                        <p class="descripCard">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+                        <p class="costCard">$4.50</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/tea2.jpg" alt="tea2">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Ginger</h2>
+                        <p class="descripCard">Original black tea with fresh ginger, lemon and honey</p>
+                        <p class="costCard">$5.00</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/tea3.jpg" alt="tea3">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Cranberry</h2>
+                        <p class="descripCard">Invigorating black tea with cranberry and honey</p>
+                        <p class="costCard">$5.00</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/tea4.jpg" alt="tea4">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Sea buckthorn</h2>
+                        <p class="descripCard">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+                        <p class="costCard">$5.50</p>
+                    </div>
+                </article>
+    </div>
+    <div id="dess-menu" class="menu-category hidden">
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess1.jpg" alt="dess1">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Marble cheesecake</h2>
+                        <p class="descripCard">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+                        <p class="costCard">$3.50</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess2.jpg" alt="dess2">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Red velvet</h2>
+                        <p class="descripCard">Layer cake with cream cheese frosting</p>
+                        <p class="costCard">$4.00</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess3.jpg" alt="dess3">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Cheesecakes</h2>
+                        <p class="car">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+                        <p class="costCard">$4.50</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess4.jpg" alt="dess4">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Creme brulee</h2>
+                        <p class="descripCard">Delicate creamy dessert in a caramel basket with wild berries</p>
+                        <p class="costCard">$4.00</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess5.jpg" alt="dess5">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Pancakes</h2>
+                        <p class="descripCard">Tender pancakes with strawberry jam and fresh strawberries</p>
+                        <p class="costCard">$4.50</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess6.jpg" alt="dess6">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Honey cake</h2>
+                        <p class="descripCard">Classic honey cake with delicate custard</p>
+                        <p class="costCard">$4.50</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess7.jpg" alt="dess7">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Chocolate cake</h2>
+                        <p class="descripCard">Cake with hot chocolate filling and nuts with dried apricots</p>
+                        <p class="costCard">$5.50</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                    <img class="zoom-image" src="./img/dess8.jpg" alt="dess8">
+                    </div>
+                    <div class="cardDescription">
+                        <h2 class="costCard">Black forest</h2>
+                        <p class="descripCard">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
+                        <p class="costCard">$6.50</p>
+                    </div>
+                </article>
+    </div>
                 </div>
     </div>
         </div>
@@ -249,5 +391,6 @@
       }
     });
   </script>
+  <script src="./script.js"></script>
 </body>
 </html>
