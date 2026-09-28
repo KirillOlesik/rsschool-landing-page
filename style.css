@@ -1,3 +1,7 @@
+section {
+    all: unset;
+    display: block;    
+}
 p {
   margin: 0;
 }
@@ -5,8 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 .body {
-    width: 1440px;
-    
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #E1D4C9;
@@ -182,13 +186,14 @@ flex-grow: 0;
     transform: translateX(0);
 }
 .favorite-coffe{
-    height: 799px;
+    max-height: 799px;
 padding: 0px 40px;
 }
 .coffe-box{
     display: flex;
     flex-direction: column;
     max-width: 1360px;
+    width: 100%;
 gap: 40px;
 height: 799px;
 }
@@ -219,14 +224,17 @@ color: #B0907A;
     display: flex;
     flex-direction: column;
     align-items: center;
-width: 1360px;
+max-width: 1360px;
+width: 100%;
 height: 684px;
 gap: 40px;
 opacity: 1;
+overflow: hidden;
 
 }
 .slider{
-    width: 1360px;
+    max-width: 1360px;
+    width: 100%;
 height: 640px;
 gap: 40px;
 opacity: 1;
@@ -324,7 +332,8 @@ color: #403F3D;
     display: flex;
     flex-direction: column;
     align-items: center;
-width: 1440px;
+max-width: 1440px;
+width: 100%;
 height: 1325px;
 gap: 40px;
 opacity: 1;
@@ -336,6 +345,7 @@ opacity: 1;
     width: 100%;
 height: 1325px;
 max-width: 1360px;
+
 gap: 40px;
 
 opacity: 1;
@@ -350,7 +360,7 @@ opacity: 1;
     font-style: normal;
     font-size: 59px;
     line-height: 125%;
-    max-height: 225px;
+    
 
     
     
@@ -479,8 +489,9 @@ transition:  0.8s ease
 }
 
 .offerimg{
-    width: 630px;
-    height: 630px;
+    width: 100%;
+    max-width: 630px;   
+    max-height: 630px;
 }
 .buttons{
     width: 420px;
@@ -668,7 +679,7 @@ line-height: 150%;
   transform: scale(1); 
 }
 
-/* Подсвечиваем луну */
+ 
 .dark-theme #moon-icon {
   fill: #b0907a;
 }
@@ -751,6 +762,9 @@ display: contents
 }
 #dess-menu {
 display: contents
+}
+.nav-link{
+    display: contents;
 }
 .photoCard{
     width: 310px;
@@ -900,4 +914,152 @@ color: #403F3D;
 }
 .image-container:hover .zoom-image {
   transform: scale(1); 
+}
+.burger-btn {
+  display: none;   
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;    
+}
+.burger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #403F3D;    
+  transition: all 0.3s ease;    
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+   
+@media (max-width: 768px) {
+  .burger-btn {
+    display: flex;    
+  }
+.asd{
+display: none;
+}
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;    
+    width: 100%;    
+    height: 100vh;    
+    background-color: #E1D4C9;    
+    padding-top: 100px;    
+    transition: right 0.5s ease;    
+    z-index: 5;
+  }
+
+  .nav-list {
+    flex-direction: column;    
+    align-items: center;
+    gap: 60px;    
+  }
+
+  .navigation.open {
+    right: 0; 
+  }
+  .burger-btn.open .burger-line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .burger-btn.open .burger-line:nth-child(2) {
+    opacity: 0; 
+  }
+  .burger-btn.open .burger-line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+
+  body.lock {
+    overflow: hidden;
+  }
+  .contactsBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.row-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 460px; 
+    overflow: hidden; 
+}
+
+.slider-line {
+    display: flex;
+    gap: 40px; 
+    transform: translateX(0);
+    width: max-content;
+}
+
+.slider-line.animated {
+    transition: transform 0.4s ease-in-out;
+}
+.sliderCard {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    flex-shrink: 0; 
+    width: 480px;  
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+
+.img-wrapper {
+    width: 100%;
+    height: 480px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.imgslide1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+   
+.dash.active {
+    background-color: #665F55 !important;    
+}
+.dash {
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;          
+    background-color: #C1B6AD;    
+    cursor: pointer;
+    flex-shrink: 0;              
+    transition: background-color 0.01s ease-in-out;    
+}
+.btnSlider{
+    background: none;            
+    border: none;       
+    cursor: pointer;
+    border-radius: 100px;   
+    
+}
+.btnSlider:hover{
+    background-color: #C1B6AD;
 }
