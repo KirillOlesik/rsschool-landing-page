@@ -18,7 +18,7 @@
     }
   </script>
 </head>
-<body>
+<body class="body">
     <header>
         <div class="box">
         <div class="header-menu">
@@ -46,11 +46,11 @@
 </svg>
 
 <nav >
-    <ul class="navigation" >
-        <li><a href="#favCoff">Favorite coffe</a></li>
-        <li><a href="#about">About</a></li>
-            <li><a href="#mobApp">Mobile app</a></li>
-            <li><a href="#foot">Contact us</a></li>
+    <ul class="navigation" id="navMenu" >
+        <li><a href="#favCoff" class="nav-link">Favorite coffe</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#mobApp" class="nav-link">Mobile app</a></li>
+            <li><a href="#foot" class="nav-link">Contact us</a></li>
         </ul>
 </nav>
 <div class="header-actions">
@@ -72,7 +72,13 @@
 <path d="M65.333 9.16675H67.4163C68.5669 9.16675 69.4997 10.0995 69.4997 11.2501C69.4997 12.4007 68.5669 13.3334 67.4163 13.3334H66.1663" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </a>
+    <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
 </div>
+
 </div>
             </div>
 
@@ -102,39 +108,66 @@
                 <h2 class="choose">Choose your <span class="favor">favorite</span > coffee</h2>
                     <div class="coffe-slider">
                         <div class="slider">
-                        <svg class="svgarr" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
-<path d="M36.5 30H24M30 36L24 30L30 24" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <div class="row-slider">
-                        <section class="slide-1" >
-                            <div content>
-                                <img src="./img/slide1.png" alt="slide-1" class="imgslide1" >
-                                </div>
-                                <div class="description">
-                                    <h2 class="topic">S’mores Frappuccino</h2>
-                                    <p class="descrip" >This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                                    <p class="cost">$5.50</p>
-                                </div>
-                        </section>
-
-                        </div>
-                        <svg class="svgarr" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
-<path d="M24 30H36.5M30.5 36L36.5 30L30.5 24" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                            <button type="button" id="btnPrev" class="btnSlider">
+            <svg class="svgarr" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
+                <path d="M36.5 30H24M30 36L24 30L30 24" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        
+                <div class="row-slider">
+            <div class="slider-line" id="sliderLine">
+                
+                                
+                
+                                <article class="sliderCard" data-index="2">
+                    <div class="img-wrapper">
+                        <img src="./img/slide2.png" alt="slide-2" class="imgslide1">
+                    </div>
+                    <div class="description">
+                        <h2 class="topic">Caramel Macchiato</h2>
+                        <p class="descrip">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                        <p class="cost">$5.00</p>
+                    </div>
+                </article>
+                <article class="sliderCard" data-index="3">
+                    <div class="img-wrapper">
+                        <img src="./img/slide1.png" alt="slide-1" class="imgslide1">
+                    </div>
+                    <div class="description">
+                        <h2 class="topic">S’mores Frappuccino</h2>
+                        <p class="descrip">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                        <p class="cost">$5.50</p>
+                    </div>
+                </article>
+                                <article class="sliderCard" data-index="1">
+                    <div class="img-wrapper">
+                        <img src="./img/slide3.png" alt="slide-3" class="imgslide1">
+                    </div>
+                    <div class="description">
+                        <h2 class="topic">Ice coffee</h2>
+                        <p class="descrip">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                        <p class="cost">$4.50</p>
+                    </div>
+                </article>
+                
+                
+            </div>
+        </div>
+        
+                <button type="button" id="btnNext" class="btnSlider">
+            <svg class="svgarr" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
+                <path d="M24 30H36.5M30.5 36L36.5 30L30.5 24" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+                        
 
                         </div>
                         <div class="controls">
-                            <svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="40" height="4" rx="2" fill="#665F55"/>
-</svg>
-<svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="40" height="4" rx="2" fill="#C1B6AD"/>
-</svg>
-<svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="40" height="4" rx="2" fill="#C1B6AD"/>
-</svg>
+                           <div class="dash active" data-index="1"></div>
+    <div class="dash" data-index="2"></div>
+    <div class="dash" data-index="3"></div>
 
                         </div>
                     </div>
@@ -263,6 +296,7 @@
       }
     });
   </script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
