@@ -6,7 +6,7 @@ let productsData = [];
 
 
 function loadProducts() {
-    fetch('/products.json')
+    fetch('products.json')
         .then(response => response.json())
         .then(data => {
             productsData = data; 
