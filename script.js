@@ -56,7 +56,6 @@ function renderCards(category) {
     initModalEvents();
     
     
-    initModalOpen();
 }
 
 
